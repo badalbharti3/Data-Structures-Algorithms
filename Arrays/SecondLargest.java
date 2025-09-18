@@ -1,9 +1,8 @@
 package Arrays;
 import java.util.*;
-
 public class SecondLargest {
     public static void main(String[] args) {
-        int arr[] = {1,4,7,9,9,9,6,6,5};
+        int arr[] = {1,4,7,8,9,9,6,6,5};
         int n = arr.length;
         // Brute force 
         // Sort the array O(nlogn)
@@ -16,6 +15,24 @@ public class SecondLargest {
                 break; // after we encounter such case we know that the current element  is sec_lar.
             }
         }
-        System.out.print(sec_lar);
+        System.out.println(sec_lar);
+
+
+        // A better or optimised approach in O(n)
+
+        int lar = arr[0], sl = -1;
+
+        for(int i:arr){
+            if(i > lar){
+                lar = i;
+            }
+        }
+
+        for(int i:arr){
+             if(i > sl && i < lar){
+                sl = i;
+            }
+        }
+        System.out.println("Second largest from a better approach: "+sl);
     }
 }
