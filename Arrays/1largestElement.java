@@ -1,7 +1,7 @@
 package Arrays;
 import java.util.*;
 
-public class largestElement {
+class largestElement {
     public static int[] globalArray = {5,8,9,7,4}; // This array can be accessed inside any class. It is declared globally through public static keyword.
     // keywords like static is used so that we dont need any object to call this method.
 

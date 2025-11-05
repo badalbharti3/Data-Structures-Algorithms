@@ -1,7 +1,7 @@
 package Arrays;
 import java.util.Scanner;
 
-public class checkSorted {
+class checkSorted {
     static void checkSortedness(int arr[], int n){
         for(int i=1; i<n; i++){
             if(arr[i-1] > arr[i]){

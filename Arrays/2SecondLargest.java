@@ -1,6 +1,6 @@
 package Arrays;
 import java.util.*;
-public class SecondLargest {
+class SecondLargest {
     //..........
     static void bruteForceApproach(int[] arr, int n){
         Arrays.sort(arr);

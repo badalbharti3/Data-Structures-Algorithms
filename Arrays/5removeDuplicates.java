@@ -1,7 +1,7 @@
 package Arrays;
 import java.util.*;
 
-public class removeDuplicates {
+class removeDuplicates {
     static int handleDuplicates(int arr[], int n){
         // ArrayList<Integer> temp = new ArrayList<>();
         // for(int i:arr){

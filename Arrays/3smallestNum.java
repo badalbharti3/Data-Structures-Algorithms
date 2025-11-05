@@ -1,6 +1,6 @@
 package Arrays;
 
-public class smallestNum {
+class smallestNum {
     static void smallest(int[] arr, int n){
         int min = arr[0];
         int s_min = Integer.MAX_VALUE;
